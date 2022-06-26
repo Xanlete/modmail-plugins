@@ -1,13 +1,6 @@
-import logging
-from enum import Enum
-from random import randint, choice
+import random
 import discord
 from discord.ext import commands
-from core import checks
-import box
-import json
-import string
-from core.models import PermissionLevel
 
 Cog = getattr(commands, "Cog", object)
 
@@ -20,7 +13,7 @@ class Vex(Cog):
     """
 
     vex = [
-        "Your useless self has nothing that would justify expending my precious time on the likes of you"
+        ""
     ]
 
 
@@ -29,15 +22,13 @@ class Vex(Cog):
         self.bot = bot
         # self.db = bot.plugin_db.get_partition(self)
 
-    @commands.command(name="aki", aliases=["cat"])
+    @commands.command(name="vexing", aliases=["vex"])
     async def _aki(self, ctx):
         """
         Replies with a witty remark. Give it a try if you think you're strong enough to take it.
         """
-        embed = discord.Embed(
-            title="(choice(self.vex))", color=0000000
-        )
-        await ctx.send(embed=embed)
+    random = ["Your useless self has nothing that would justify expending my precious time on the likes of you, "entry2", "entry3"]
+    await ctx.send(f"{random.choice(random)}")
 
 
 def setup(bot):

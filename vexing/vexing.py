@@ -35,7 +35,7 @@ class Vex(Cog):
         Replies with a witty remark. Give it a try if you think you're strong enough to take it.
         """
         embed = discord.Embed(
-            title="vex", color=0000000
+            title="(choice(self.vex))", color=0000000
         )
         await ctx.send(embed=embed)
 

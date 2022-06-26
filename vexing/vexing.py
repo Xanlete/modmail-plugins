@@ -27,7 +27,7 @@ class Vex(Cog):
         """
         Replies with a witty remark. Give it a try if you think you're strong enough to take it.
         """
-    random = ["Your useless self has nothing that would justify expending my precious time on the likes of you, "entry2", "entry3"]
+    random = ["Your useless self has nothing that would justify expending my precious time on the likes of you", "entry2", "entry3"]
     await ctx.send(f"{random.choice(random)}")
 
 

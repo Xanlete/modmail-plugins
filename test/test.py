@@ -29,8 +29,8 @@ class emoji(Cog):
         self.bot = bot
         # self.db = bot.plugin_db.get_partition(self)
 
-    @commands.command(name="yuri", aliases=["gaytime"])
-    async def _gaytime(self, ctx):
+    @commands.command(name="emoji", aliases=["emote"])
+    async def _emoji(self, ctx):
         """
         Where did I mess up
         """
